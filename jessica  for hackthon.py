@@ -18,20 +18,15 @@ from ibm_watson import SpeechToTextV1 #for accesing the ibm watson studio
 from ibm_cloud_sdk_core.authenticators import IAMAuthenticator
 from ibm_cloud_sdk_core import ApiException #for any exception that occur while importing
 
-
-
-
-
+#for voices 
 def speak(audio):
     engine = pyttsx3.init()
     voices=engine.getProperty('voices')
     engine.setProperty('voice','voices[0].id')
     engine.say(text)
     engine.runAndWait()
-
-
+    
 #uses of  ibm recognizer 
-
 api=IAMAuthenticator("Api_key") #api key authenticator
 speech_to_text = SpeechToTextV1(authenticator=api) #authenticator watson speech to text 
 speech_to_text.set_service_url="url" #url watson speech to text 
@@ -55,10 +50,7 @@ def record_audio(ask = False):  #for record the audio for responding the data
         return voice_data.lower()
 
 #uses of google recognizer
-
-
-#recognize what we are saying
-r = sr.Recognizer() #reocgnizer
+r = sr.Recognizer() #reocgnizer #recognize what we are saying
 def record_audio(ask = False):  #for record the audio for responding the data 
     with sr.Microphone() as source: # for source for our speech
         print("listening");
@@ -76,10 +68,7 @@ def record_audio(ask = False):  #for record the audio for responding the data
         speak('sorry, please repeat it');
     return voice_data.lower()
 
-
-
-
-
+#for wishing in morning or afternoon or evening 
 def wishMe():
     #for wishes
     hour = int(datetime.datetime.now().hour)
@@ -92,10 +81,7 @@ def wishMe():
     else:
         speak("Good Evening  !")
 
-
-
-
-
+#for tell the date
 def tellDay():
       
     # it will return the day
@@ -111,18 +97,15 @@ def tellDay():
         Speak("The day is " + day_of_the_week)
 
 
-
+#for helping 
 def Help_me():
     account_sid = ['twilio_id'] #twillio ussage id
     auth_token = ['twilio_token']#twillio ussage token 
     client = Client(account_sid, auth_token)
     message = client.messages.create( messaging_service_sid='twilio_id', body="please help me police,i'm in tragedy!", to='+91*********' )
     print(message.sid)
-
-
-
-
-
+    
+#for response
 def respond(voice_data):
     #basic commands
     if 'hai' in voice_data:
@@ -165,11 +148,7 @@ def respond(voice_data):
         webbrowser.get().open(url)
         speak('here is what i found for :' + search)
         
-
-
-
-
-
+#for gathering all functions from top to bottom
 time.sleep(1) #time to sleep after performing in any respond
 speak('I am jessica, how may i help you ?') #greetings
 wishMe() #wish when we start our program
