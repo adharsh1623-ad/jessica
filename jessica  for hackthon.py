@@ -1,7 +1,4 @@
-#!/usr/bin/env python
-# coding: utf-8
 
-# In[1]:
 
 
 import speech_recognition as sr # speech recogntion module
@@ -22,7 +19,7 @@ from ibm_cloud_sdk_core.authenticators import IAMAuthenticator
 from ibm_cloud_sdk_core import ApiException #for any exception that occur while importing
 
 
-# In[2]:
+
 
 
 def speak(audio):
@@ -33,14 +30,13 @@ def speak(audio):
     engine.runAndWait()
 
 
-# In[3]:
+#uses of  ibm recognizer 
 
-
-api=IAMAuthenticator("99OfdJnQ4kKC-_SU48suO-6EX6ddAlKQVKYttg-xLU_O") #api key authenticator
+api=IAMAuthenticator("Api_key") #api key authenticator
 speech_to_text = SpeechToTextV1(authenticator=api) #authenticator watson speech to text 
-speech_to_text.set_service_url="https://api.eu-gb.speech-to-text.watson.cloud.ibm.com/instances/1af1e959-0d77-4df8-9088-8568b0b47903" #url watson speech to text 
+speech_to_text.set_service_url="url" #url watson speech to text 
 r = sr.Recognizer() #reocgnizer
-apikey="99OfdJnQ4kKC-_SU48suO-6EX6ddAlKQVKYttg-xLU_O" #api key
+apikey="Api_key" #api key
 def record_audio(ask = False):  #for record the audio for responding the data
     with sr.Microphone() as source: #source
         print("listening");
@@ -58,8 +54,7 @@ def record_audio(ask = False):  #for record the audio for responding the data
         speak('sorry, please repeat it');
         return voice_data.lower()
 
-
-# In[4]:
+#uses of google recognizer
 
 
 #recognize what we are saying
@@ -82,7 +77,7 @@ def record_audio(ask = False):  #for record the audio for responding the data
     return voice_data.lower()
 
 
-# In[5]:
+
 
 
 def wishMe():
@@ -98,17 +93,11 @@ def wishMe():
         speak("Good Evening  !")
 
 
-# In[6]:
+
 
 
 def tellDay():
       
-    # the weekday method is a method from datetime
-    # library which helps us to an integer 
-    # corresponding to the day of the week
-    # this dictionary will help us to map the
-    # integer with the day and we will check for
-    # the condition and if the condition is true
     # it will return the day
     day = datetime.datetime.today().weekday() + 1
       
@@ -122,8 +111,6 @@ def tellDay():
         Speak("The day is " + day_of_the_week)
 
 
-# In[7]:
-
 
 def Help_me():
     account_sid = ['AC41dd6a9f863fa8d1f5905728830d4958'] #twillio ussage id
@@ -133,7 +120,7 @@ def Help_me():
     print(message.sid)
 
 
-# In[8]:
+
 
 
 def respond(voice_data):
@@ -180,7 +167,7 @@ def respond(voice_data):
         
 
 
-# In[ ]:
+
 
 
 time.sleep(1) #time to sleep after performing in any respond
