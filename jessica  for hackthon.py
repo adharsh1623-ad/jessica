@@ -41,7 +41,7 @@ def record_audio(ask = False):  #for record the audio for responding the data
         audio = r.listen(source ,phrase_time_limit=3);
         voice_data = ''
     try:
-        voice_data = r.recognize_ibm(audio,username= 'adharsh1623@gmail.com',password='AdhuAdhi@99') # recognizer ibm watson studio
+        voice_data = r.recognize_ibm(audio,username= 'username',password='pasword') # recognizer ibm watson studio
         print(voice_data);
     except sr.UnknownValueError: # for unknown value other than respond()
         speak('i could not get it');
