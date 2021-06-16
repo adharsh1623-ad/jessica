@@ -113,10 +113,10 @@ def tellDay():
 
 
 def Help_me():
-    account_sid = ['AC41dd6a9f863fa8d1f5905728830d4958'] #twillio ussage id
-    auth_token = ['d94dc71247c1051fb41d8c75077df949']#twillio ussage token 
+    account_sid = ['twilio_id'] #twillio ussage id
+    auth_token = ['twilio_token']#twillio ussage token 
     client = Client(account_sid, auth_token)
-    message = client.messages.create( messaging_service_sid='MGbe3bc98fef5438977cc4004b6e64b399', body="please help me police,i'm in tragedy!", to='+918778593946' )
+    message = client.messages.create( messaging_service_sid='twilio_id', body="please help me police,i'm in tragedy!", to='+91*********' )
     print(message.sid)
 
 
