@@ -1,6 +1,3 @@
-
-
-
 import speech_recognition as sr # speech recogntion module
 import webbrowser #for exploring web browser
 import os 
@@ -158,5 +155,3 @@ while 1:
     if 'exit'  in voice_data: #for exit the program
         speak("Thanks for giving me your time")
         break
-    
-
