@@ -19,6 +19,10 @@ DEMO VIDEO:
 DEMO PHOTO:  
 ![]( Demo%20Photo/jessica.png)
 
+ROADMAP:  
+![]( Demo%20Photo/RoadMap.jpeg)
+
+
 AUTHORS:
 
 This project is made up of two recogntizers one is ibm and other one is google
