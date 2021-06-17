@@ -22,6 +22,8 @@ DEMO PHOTO:
 ROADMAP:  
 ![]( Demo%20Photo/RoadMap.jpeg)
 
+ARCHITECTURE:
+![]( Demo%20Photo/Architecture.jpeg)
 
 AUTHORS:
 
