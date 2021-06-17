@@ -82,11 +82,11 @@ click the above video to have a demo video of our idea and result
 This project is made up of two recogntizers one is ibm and other one is google
 This project is created by :
 
-         Sneha.k, [TEXT TO S](actual URL to navigate)
+[Sneha.k](https://github.com/Sneha-creat)
 	
-         G.V Indhumathi,
+[G.V Indhumathi](https://github.com/indhu2003)
 	
-         Susmitha.S,
+[Susmitha.S](https://github.com/Susmitha23)
 [Anand Kumar.m](https://github.com/anand2712-del)
 	
 [Adharsh.s](https://github.com/adharsh1623-ad)
