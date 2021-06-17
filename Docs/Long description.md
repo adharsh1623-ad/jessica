@@ -1,4 +1,4 @@
-<h2 align="center">Long descrption</h2>
+
 
 Women are involved in all parts of society, but some matters affect and touch women more than others. 
 •	women in conflict areas are increasingly turning to technology to build peace and reduce gender inequality.
