@@ -4,7 +4,7 @@ If The Person Say "Help Me " in Voice data ,The Code Will Send A Message To the 
 DEMO VIDEO:
 
 
-[![jessica](https://img.youtube.com/vi/hmlqSHL0nSQ/2.jpg)](https://www.youtube.com/watch?v=hmlqSHL0nSQ)
+[![jessica](https://img.youtube.com/vi/hmlqSHL0nSQ/0.jpg)](https://www.youtube.com/watch?v=hmlqSHL0nSQ)</br>
 
 
 
