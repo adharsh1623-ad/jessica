@@ -4,7 +4,7 @@ DEMO VIDEO:
 
   [![jessica](https://img.youtube.com/vi/hmlqSHL0nSQ/2.jpg)](https://www.youtube.com/watch?v=hmlqSHL0nSQ) 
   
-  ![]( Demo Photo/jessica.png)
+  ![]( Demo%20Photo/jessica.png)
 
 
 This project is made up of two recogntizers one is ibm and other one is google
