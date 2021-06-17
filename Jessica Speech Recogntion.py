@@ -102,11 +102,12 @@ def tellDay():
 
 def location():
     Nomi_locator = Nominatim(user_agent="My App")#initialize the Nominatim object
+    location = Nomi_locator.reverse(f"{latitude}, {longitude}") #get the location
     my_location= geocoder.ip('me')
 #my latitude and longitude coordinates
 latitude= my_location.geojson['features'][0]['properties']['lat']
 longitude = my_location.geojson['features'][0]['properties']['lng']
-location = Nomi_locator.reverse(f"{latitude}, {longitude}") #get the location
+
 
 def Help_me(): # incase of emergrncy situation 
     account_sid = 'ACC-SID'  #this is account id 
