@@ -62,6 +62,10 @@ click the above video to have a demo video of our idea and result
 * Watson Speech to Text processes the audio and extracts the text.
 * Watson Translation (optionally) can translate the text to the desired language.
 * The app stores the translated text as a document within Object Storage.
+	
+ <h2 align="left" >Long Descrpition</h2> 
+[click here](https://github.com/adharsh1623-ad/jessica/blob/main/Docs/Long%20description.md)
+	
  <h2 align="left" >Get Started:</h2> 
         <h4>This project you can run in any python IDE i.e Jupyter notebook , Pycharm</h4>
  1.First You need to have a account in IBM cloud service. 
@@ -78,14 +82,13 @@ click the above video to have a demo video of our idea and result
 This project is made up of two recogntizers one is ibm and other one is google
 This project is created by :
 
-         Sneha.k,
+         Sneha.k, [TEXT TO S](actual URL to navigate)
 	
          G.V Indhumathi,
 	
          Susmitha.S,
+[Anand Kumar.m](https://github.com/anand2712-del)
 	
-         Anand Kumar.m,
-	
-         Adharsh.s
+[Adharsh.s](https://github.com/adharsh1623-ad)
 	
 Of Rathinam College of Arts and Science Coimbatore
