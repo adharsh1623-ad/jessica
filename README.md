@@ -1,4 +1,4 @@
-This is The Code About The Speech Recogntion Software That Is Made of Python. This Code Use IBM Watson Speech-To-Text To recognize The Speech Commands .
+This is The Code About The Speech Recogntion Software That Is Made  Up of Python. This Code Use IBM Watson Speech-To-Text To recognize The Speech Commands .
 If The Person Say "Help Me " in Voice data ,The Code Will Send A Message To the Police Department OR For  Any number He/She Assigned To the Speech Model
  
 DEMO VIDEO:
