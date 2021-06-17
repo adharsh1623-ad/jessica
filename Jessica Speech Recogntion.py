@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[54]:
-
-
 import speech_recognition as sr # speech recogntion
 import webbrowser #for web browser
 import os
@@ -26,20 +20,12 @@ from ibm_watson import SpeechToTextV1 #by using ibm services using speech-to-tex
 from ibm_cloud_sdk_core.authenticators import IAMAuthenticator #for authenticating the IBM id,apikey,url,password
 from ibm_cloud_sdk_core import ApiException #for reduce any ecxeption errors 
 
-
-# In[55]:
-
-
 def speak(audio): 
     engine = pyttsx3.init('sapi5')
     voices=engine.getProperty('voices')
     engine.setProperty('voice','voices[0].id')
     engine.say(text)
     engine.runAndWait()
-
-
-# In[ ]:
-
 
 api=IAMAuthenticator("API key") #authenticating the API key
     speech_to_text = SpeechToTextV1(authenticator=api)
@@ -63,10 +49,6 @@ def record_audio(ask = False):
         speak('sorry, please repeat it');
         return voice_data.lower()
 
-
-# In[56]:
-
-
 r = sr.Recognizer() #the recognizer
 def record_audio(ask = False): 
     with sr.Microphone() as source: # using microphone to capture the sound or audio
@@ -85,10 +67,6 @@ def record_audio(ask = False):
         speak('sorry, please repeat it');
     return voice_data.lower()
 
-
-# In[57]:
-
-
 def wishMe(): #for wishing according to the time i.e good morning
     hour = int(datetime.datetime.now().hour)
     if hour>= 0 and hour<12:
@@ -100,10 +78,6 @@ def wishMe(): #for wishing according to the time i.e good morning
     else:
         speak("Good Evening  !") #good evening command
 
-
-# In[58]:
-
-
 def speak(audio_string): #to convert the captured file to mp3 and to save to the sysytem
     tts = gTTS(text=audio_string, lang='en')
     r=random.randint(1,2000000)
@@ -113,18 +87,7 @@ def speak(audio_string): #to convert the captured file to mp3 and to save to the
     print(audio_string)
     os.remove(audio_file)
 
-
-# In[59]:
-
-
 def tellDay():
-      
-    # the weekday method is a method from datetime
-    # library which helps us to an integer 
-    # corresponding to the day of the week
-    # this dictionary will help us to map the
-    # integer with the day and we will check for
-    # the condition and if the condition is true
     # it will return the day
     day = datetime.datetime.today().weekday() + 1
       
@@ -137,10 +100,6 @@ def tellDay():
         print(day_of_the_week)
         Speak("The day is " + day_of_the_week)
 
-
-# In[62]:
-
-
 def location():
     Nomi_locator = Nominatim(user_agent="My App")#initialize the Nominatim object
     my_location= geocoder.ip('me')
@@ -148,10 +107,6 @@ def location():
 latitude= my_location.geojson['features'][0]['properties']['lat']
 longitude = my_location.geojson['features'][0]['properties']['lng']
 location = Nomi_locator.reverse(f"{latitude}, {longitude}") #get the location
-
-
-# In[63]:
-
 
 def Help_me(): # incase of emergrncy situation 
     account_sid = 'ACC-SID'  #this is account id 
@@ -163,10 +118,6 @@ def Help_me(): # incase of emergrncy situation
                               to='+91************' 
                           ) 
     print(message.sid) #confirmation of the message sent 
-
-
-# In[64]:
-
 
 def respond(voice_data):
     
@@ -212,11 +163,6 @@ def respond(voice_data):
         speak("don't panic help will be sent to you");
         Help_me()
         
-
-
-# In[ ]:
-
-
 time.sleep(1) #time to sleep after the execution of every executable statments
 wishMe() #for wishing
 speak('I am jessica, how may i help you ?')
@@ -226,4 +172,3 @@ while 1:
     if 'exit'  in voice_data: #for exting the main loop 
         speak("Thanks for giving me your time") 
         break
-
